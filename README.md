@@ -6,7 +6,7 @@ The pipeline for this web scraping process is:
 4. One all pages have been scraped, "click" each search result, which pops open new information, and scrape information from there one-by-one. In actuality, the "click" is a Javascript injection.
 5. Write to an Excel file for every 5 clicked/injeted results.
 
-If the program quits while going thorugh clicked/injected results due to a timeout error (or any other error), it can continue searching from where it left off. It'll read the code (labelled "kode" in the program) of the last written item, find its index position in the first main sheet containing the page results, get the code of the next index position from the page results, and use that to continue sarching through clicked/injected results.
+If the program quits while going thorugh clicked/injected results due to a timeout error (or any other error), it can continue searching from where it left off upon re-running the program. It'll read the code (labelled "kode" in the program) of the last written item, find its index position in the first main sheet containing the page results, get the code of the next index position from the page results, and use that to continue sarching through clicked/injected results.
 
 While it fully works and is finished, it can still improved:
 1. If a search result is categorised as something other than "SK" (Suplemen) or "KO" (Kosmetika), the program will fail. Each category stores its data in a different table, and the program does not accommodate categories other than "SK and "KO".
