@@ -1,4 +1,6 @@
-This project was my introduction to web scraping as a part of my one-month internship at Kalbe Farma. It's an automated program that will search up products with "vitamin d3" in their names in the BPOM database, scrapes data, then saves the data to an Excel file. The pipeline for this process is:
+This project was my introduction to web scraping as a part of my one-month internship at Kalbe Farma. It's an automated program that will search up products with "vitamin d3" in their names in the BPOM database, scrapes data, then saves the data to an Excel file. The program name is "scraping_test.py", while the resulting Excel file is "produk_vitD3.xlsx". Please note that its contents are largely in Indonesian.
+
+The pipeline for this web scraping process is:
 1. Navigate to "vitamin d3" search results.
 2. Scrape information from each search result, iterating through all the pages while doing so. After scraping one page (that contains 10 results), write it to an Excel file.
 4. One all pages have been scraped, "click" each search result, which pops open new information, and scrape information from there one-by-one. In actuality, the "click" is a Javascript injection.
