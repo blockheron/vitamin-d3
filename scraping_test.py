@@ -278,7 +278,7 @@ for i in range(start_index, entries):    # iterate through each item via injecti
     inner_list = []
     # item_count += 1
 
-    code = item_codes[i]    # BUG: ValueError: 0 is not in range? only when start from empty sheet
+    code = item_codes[i]
     injection = 'get_detail("' + code + '")'
     product = product_codes[i]
 
